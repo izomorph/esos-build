@@ -1,0 +1,16 @@
+version: "2"
+
+services:
+  esos-builder:
+    restart: "no"
+    image: esos:v2.x.x
+    container_name: esos_builder
+    environment:
+      - container=docker
+      - GOSU_UID=1000
+      - GOSU_GID=1000
+    working_dir: /home/build/build
+    privileged: yes
+    volumes:
+      - /dev:/dev
+      - $PWD/build:/home/build/build
