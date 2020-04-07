@@ -20,7 +20,7 @@ esos-git-commit.zip
 The first one is a compressed flashable image, the second one is a distribution package, you can use to make a custom installation (for example add RAID utilities for your controller).
 
 ## Integration with CI/CD
-If you want to integrate this builder into your CI/CD pipeline (for example Jenkins), you can do so by making Jenkins trigger the build, when an new tag is commited on the git repo.
+If you want to integrate this builder into your CI/CD pipeline (for example Jenkins), you can do so by making Jenkins trigger the build, when an new tag is commited on the ESOS git repo.
 
 In that case the Jenkins script can run something like this:
 ```console
