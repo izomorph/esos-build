@@ -1,6 +1,6 @@
 # Build environment for ESOS
 
-FROM ubuntu:latest
+FROM ubuntu:focal
 
 # Fix repositories
 RUN sed -i 's/main$/main universe/' /etc/apt/sources.list; \
