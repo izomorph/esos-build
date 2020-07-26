@@ -1,6 +1,6 @@
 # Build environment for ESOS
 
-FROM ubuntu:19.04
+FROM ubuntu:latest
 
 # Fix repositories
 RUN sed -i 's/main$/main universe/' /etc/apt/sources.list; \
