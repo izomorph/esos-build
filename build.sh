@@ -6,6 +6,7 @@ export USER="$(whoami)"
 export PATH="$HOME/bin:$PATH"
 
 # Begin downloading sources
+cd ~/
 git clone https://github.com/quantum/esos.git esos_build
 cd esos_build
 git checkout $(git describe --tags)
