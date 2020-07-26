@@ -3,7 +3,7 @@ version: "2"
 services:
   esos-builder:
     restart: "no"
-    image: esos:v2.x.x
+    image: esos:2.x.x
     container_name: esos_builder
     environment:
       - container=docker
