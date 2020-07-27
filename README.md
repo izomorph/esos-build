@@ -5,7 +5,7 @@ Build ESOS Images using Docker
 To build ESOS using Docker, clone repo and then, while in the repo folder, create the container. Begin by executing:
 
 ```console
-# docker build -t 2.x.x .
+# docker build --rm -t esos:2.x.x .
 ```
 
 After succesfull build, run the container using docker-compose (if you do not have it, install it first, by using your system package manager, or pip).
