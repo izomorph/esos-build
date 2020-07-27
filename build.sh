@@ -20,6 +20,6 @@ sudo make symlink
 # Start building
 make -j4 all > /tmp/bootstrap.out 2>&1
 sudo ./chroot_build.sh -j4 -w -Orecurse > /tmp/chroot.out 2>&1
-sudo rm work/chroot/tools
+sudo rm -rf work/chroot/tools
 sudo make image
 make pkg_dist
