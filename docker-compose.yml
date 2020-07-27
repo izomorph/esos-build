@@ -9,8 +9,8 @@ services:
       - container=docker
       - GOSU_UID=1000
       - GOSU_GID=1000
-    working_dir: /home/build/esos_build
+    working_dir: /home/build/build
     privileged: yes
     volumes:
       - /dev:/dev
-      - $PWD/build:/home/build/esos_build
+      - $PWD/build:/home/build/build
