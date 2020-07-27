@@ -9,7 +9,8 @@ export PATH="$HOME/bin:$PATH"
 cd ~/
 git clone https://github.com/quantum/esos.git esos_build
 cd esos_build
-git checkout $(git describe --tags)
+# git checkout $(git describe --tags)
+git checkout 2.x.x
 
 # Fix build environment
 autoconf
